@@ -8,6 +8,5 @@ FROM gitpod/workspace-full
 ### Linode CLI
 RUN pip install linode-cli
 ### kubectl
-# VERSION = $(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)
-RUN sudo curl -o /usr/local/bin/kubectl -LO https://storage.googleapis.com/kubernetes-release/release/v1.19.0/bin/linux/amd64/kubectl \
+RUN sudo curl -o /usr/local/bin/kubectl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl \
     && sudo chmod +x /usr/local/bin/kubectl

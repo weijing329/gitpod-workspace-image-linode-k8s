@@ -12,3 +12,5 @@ RUN sudo curl -o /usr/local/bin/kubectl -LO https://storage.googleapis.com/kuber
     && sudo chmod +x /usr/local/bin/kubectl
 ### helm CLI
 RUN brew install helm
+### gloo CLI
+RUN brew install solo-io/tap/glooctl

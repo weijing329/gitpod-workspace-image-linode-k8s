@@ -14,3 +14,5 @@ RUN sudo curl -o /usr/local/bin/kubectl -LO https://storage.googleapis.com/kuber
 RUN brew install helm
 ### gloo CLI
 RUN brew install solo-io/tap/glooctl
+### bpytop
+RUN pip3 install bpytop --upgrade

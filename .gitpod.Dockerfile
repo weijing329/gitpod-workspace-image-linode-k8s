@@ -16,3 +16,5 @@ RUN brew install helm
 RUN brew install solo-io/tap/glooctl
 ### bpytop
 RUN pip3 install bpytop --upgrade
+### k9s
+RUN brew install k9s
